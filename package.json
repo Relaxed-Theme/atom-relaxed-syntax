@@ -1,13 +1,14 @@
 {
-  "name": "relaxed-atom-theme-syntax",
+  "name": "atom-relaxed-syntax",
   "theme": "syntax",
-  "version": "0.0.0",
-  "description": "A short description of your syntax theme",
+  "version": "0.0.1",
+  "description": "A relaxed theme to take a more relaxed view of things.",
   "keywords": [
     "syntax",
-    "theme"
+    "theme",
+    "relaxed"
   ],
-  "repository": "https://github.com/atom/relaxed-atom-theme-syntax",
+  "repository": "https://github.com/Relaxed-Theme/atom-relaxed-syntax",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
