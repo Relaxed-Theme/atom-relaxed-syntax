@@ -6,18 +6,16 @@
 
 *Recommended UI theme to use with this syntax theme: [One Dark UI theme](https://atom.io/themes/one-dark-ui)*
 
-![Screenshot: JSX](images/screenshot-jsx.png)
+![Screenshot: JSX](https://gitcdn.xyz/repo/Relaxed-Theme/atom-relaxed-syntax/master/images/screenshot-jsx.png)
 
 <details>
   <summary>Screenshot: Sass</summary>
-  <p>&nbsp;</p>
-  <img src="images/screenshot-sass.png" alt="Screenshot: Sass">
+  <img src="https://gitcdn.xyz/repo/Relaxed-Theme/atom-relaxed-syntax/master/images/screenshot-html.png" alt="Screenshot: Sass">
 </details>
 
 <details>
   <summary>Screenshot: HTML</summary>
-  <p>&nbsp;</p>
-  <img src="images/screenshot-html.png" alt="Screenshot: HTML">
+  <img src="https://gitcdn.xyz/repo/Relaxed-Theme/atom-relaxed-syntax/master/images/screenshot-html.png" alt="Screenshot: HTML">
 </details>
 
 ## Installation
