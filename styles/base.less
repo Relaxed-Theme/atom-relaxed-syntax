@@ -35,7 +35,7 @@ atom-text-editor {
   .gutter .line-number.folded,
   .gutter .line-number:after,
   .fold-marker:after {
-    color: @light-gray;
+    color: @syntax-invisible-character-color;
   }
 
   .invisible {
@@ -51,18 +51,79 @@ atom-text-editor {
   }
 }
 
+.highlight-info {
+	color: white;
+	background-color: @light-blue;
+}
+.highlight-success { background-color: @green; }
+.highlight-error { background-color: @red; }
+
+.text-error { color: @red; }
+
+
+// Status bar
+busy-signal.idle::before {
+	background: @green;
+}
+
+.about-release-notes {
+	color: @light-blue;
+}
+
+// file tree
+
+.list-group li:not(.list-nested-item).status-added,
+.list-tree li:not(.list-nested-item).status-added,
+.list-group li.list-nested-item.status-added > .list-item,
+.list-tree li.list-nested-item.status-added > .list-item {
+	color: @green;
+}
+
+.list-group li:not(.list-nested-item).selected.status-added, .list-tree li:not(.list-nested-item).selected.status-added, .list-group li.list-nested-item.selected.status-added > .list-item, .list-tree li.list-nested-item.selected.status-added > .list-item {
+    color: @green;
+}
+
+.list-group li:not(.list-nested-item).status-modified,
+.list-tree li:not(.list-nested-item).status-modified,
+.list-group li.list-nested-item.status-modified > .list-item,
+.list-tree li.list-nested-item.status-modified > .list-item {
+	color: @orange;
+}
+
+.tree-view:focus .selected:before {
+	background: @blue;
+}
+
+atom-text-editor[mini].is-focused {
+	border-color: @blue;
+}
+
+.atom-dock-toggle-button .atom-dock-toggle-button-inner {
+    background-color: @dark-gray;
+    border: 1px solid @very-dark-gray;
+}
+
+atom-pane-container atom-pane .item-views .pane-item {
+    color: #a8a8a8;
+    background-color: @dark-gray;
+}
+
+.tool-panel, .panel, atom-panel {
+    background-color: @very-dark-gray;
+}
 
 // Syntax styles
 
 .syntax--comment {
-  color: @light-gray;
+  color: @syntax-comment-color;
+	font-style: italic;
 }
 
 .syntax--keyword {
   color: @purple;
 
   &.syntax--control {
-    color: @purple;
+    color: @blue;
   }
 
   &.syntax--operator {
@@ -139,7 +200,7 @@ atom-text-editor {
 .syntax--punctuation {
   &.syntax--definition {
     &.syntax--comment {
-      color: @light-gray;
+      color: @syntax-comment-color;
     }
 
     &.syntax--string,
@@ -187,11 +248,10 @@ atom-text-editor {
 
 .syntax--entity {
   &.syntax--name.syntax--function {
-    color: @blue;
+    color: @light-blue;
   }
   &.syntax--name.syntax--type {
     color: @light-orange;
-    text-decoration: underline;
   }
 
   &.syntax--other.syntax--inherited-class {
@@ -207,14 +267,13 @@ atom-text-editor {
 
   &.syntax--name.syntax--tag {
     color: @red;
-    text-decoration: underline;
   }
 
   &.syntax--other.syntax--attribute-name {
     color: @orange;
 
     &.syntax--id {
-      color: @blue;
+      color: @purple;
     }
   }
 }
