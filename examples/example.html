@@ -20,19 +20,18 @@
 	Replace "no-js" class with "js" in case JavaScript is available.
 	You can delete this when you feel the need to make use of modernizr.
 	-->
-	<script>(function(h){h.className = h.className.replace('no-js', 'js')})(document.documentElement)</script>
-
-	<!-- Place favicon.ico and apple-touch-icon.png in the root directory. -->
-
-	<!-- Place anything custom after this. But put JS to the end of body. -->
+	<script>
+		(function(html) {
+			html.className = html.className.replace('no-js', 'js');
+		})(document.documentElement);
+	</script>
 </head>
 
 <body>
-
 	<!-- begin: content -->
 		<nav class="navbar navbar-expand-sm navbar-light bg-light fixed-top">
 			<a class="navbar-brand" href="index.html">Baumeister</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<button class="navbar-toggler" type="button" data-toggle="collapse">
 				<span class="navbar-toggler-icon"></span>
 			</button>
 			<div class="collapse navbar-collapse" id="navbarNav">

@@ -2,11 +2,11 @@
  * @file  JavaScript entry point of the project
  */
 
- import React from 'react'
- import Router from 'next/router'
- import SearchIcon from '../static/search.svg'
+import React from 'react'
+import Router from 'next/router'
+import SearchIcon from '../static/search.svg'
 
- export default class extends React.Component {
+export default class extends React.Component {
    constructor() {
      super()
 
@@ -15,6 +15,7 @@
    }
 
    handleSearch(event) {
+     console.log(event.target);
      this.props.handleSearch(event.target.value)
    }
 
@@ -27,7 +28,6 @@
        <div className="search-input">
          <input
            type="text"
-           placeholder="Search store..."
            onKeyUp={this.handleSearch}
            ref={input => {
              this.searchInput = input
@@ -81,4 +81,4 @@
        </div>
      )
    }
- }
+}
