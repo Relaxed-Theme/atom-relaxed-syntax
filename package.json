@@ -1,7 +1,7 @@
 {
   "name": "atom-relaxed-syntax",
   "theme": "syntax",
-  "version": "0.0.3",
+  "version": "1.0.0",
   "description": "A relaxed theme to take a more relaxed view of things.",
   "keywords": [
     "syntax",
