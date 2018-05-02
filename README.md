@@ -28,7 +28,7 @@ Install the City Lights Syntax Theme via Atom by going to:
 Or install through CLI via:
 
 ```
-apm install relaxed-atom-theme-syntax
+apm install atom-relaxed-syntax
 ```
 
 ## I don't like something
