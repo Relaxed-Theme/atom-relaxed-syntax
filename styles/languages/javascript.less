@@ -1,0 +1,102 @@
+.syntax--js {
+    &.syntax--constant {
+        color: @very-light-gray;
+    }
+
+    &.syntax--meta {
+			&.syntax--method {
+				.syntax--function {
+					color: @light-blue;
+				}
+			}
+			&.syntax--brace.syntax--round {
+				color: @white;
+			}
+		}
+
+		&.syntax--support {
+        &.syntax--variable {
+            &.syntax--property {
+                // color: @very-light-gray;
+								color: pink;
+            }
+            &.syntax--property.syntax--dom {
+                color: @blue;
+            }
+        }
+    }
+
+    &.syntax--entity {
+        &.syntax--name {
+            &.syntax--type {
+                color: @orange;
+            }
+        }
+    }
+
+		&.syntax--conditional {
+			color: @white;
+		}
+
+
+    &.syntax--variable {
+				color: @white;
+        &.syntax--this {
+					color: @red;
+					font-style: italic;
+				}
+				&.syntax--property {
+            color: @white;
+        }
+        &.syntax--other.syntax--object {
+            color: @very-light-gray;
+        }
+        &.syntax--other.syntax--object.syntax--property {
+            color: @blue;
+        }
+    }
+
+    &.syntax--string.syntax--quoted.syntax--template {
+      .syntax--other.syntax--object.syntax--property {
+          color: @green;
+      }
+    }
+
+    &.syntax--constant {
+        &.syntax--numeric {
+            color: @orange;
+        }
+        &.syntax--boolean {
+            color: @red;
+        }
+        &.syntax--key .syntax--string {
+            color: @light-orange;
+        }
+    }
+
+    &.syntax--punctuation.syntax--begin,
+    &.syntax--punctuation.syntax--end,
+    &.syntax--delimiter.syntax--object.syntax--comma,
+    &.syntax--brace.syntax--curly {
+        color: @blue;
+
+        .syntax--comment & {
+            color: @syntax-comment-color;
+        }
+    }
+
+    &.syntax--export .syntax--variable.syntax--default {
+        color: @blue;
+    }
+}
+
+
+.syntax--jsdoc {
+	&.syntax--type {
+		color: @light-orange;
+	}
+	&.syntax--brace.syntax--curly {
+		color: @light-blue;
+	}
+
+}

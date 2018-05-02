@@ -1,0 +1,20 @@
+.syntax--html, .syntax--jsx {
+
+	.syntax--entity.syntax--other.syntax--attribute-name {
+			font-style: italic;
+	}
+
+		.syntax--meta {
+        &.syntax--tag {
+            &.syntax--doctype {
+                color: @red;
+            }
+        }
+    }
+
+    .syntax--punctuation {
+        &.syntax--tag {
+            color: @blue;
+        }
+    }
+}
