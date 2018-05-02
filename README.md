@@ -20,7 +20,7 @@
 
 ## Installation
 
-Install the City Lights Syntax Theme via Atom by going to:
+Install the Relaxed Syntax Theme via Atom by going to:
 **Preferences/Settings > Install** and search for Relaxed Syntax Theme (make sure you're searching under 'Themes').
 
 Or install through CLI via:
