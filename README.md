@@ -10,7 +10,7 @@
 
 <details>
   <summary>Screenshot: Sass</summary>
-  <img src="https://gitcdn.xyz/repo/Relaxed-Theme/atom-relaxed-syntax/master/images/screenshot-html.png" alt="Screenshot: Sass">
+  <img src="https://gitcdn.xyz/repo/Relaxed-Theme/atom-relaxed-syntax/master/images/screenshot-sass.png" alt="Screenshot: Sass">
 </details>
 
 <details>
