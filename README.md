@@ -1,5 +1,14 @@
 [![Version](https://img.shields.io/github/release/Relaxed-Theme/atom-relaxed-syntax.svg)](https://github.com/Relaxed-Theme/atom-relaxed-syntax/releases)
 
+## Sorry, this project is unmaintained 😢
+
+We recommend the following:
+
+- [Relaxed Theme for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=mischah.relaxed-theme)
+- [Relaxed Theme for Zed](https://zed.dev/extensions/relaxed-theme)
+
+<hr>
+
 # Relaxed syntax theme for Atom
 
 > A relaxed Atom syntax theme to take a more relaxed view of things.
